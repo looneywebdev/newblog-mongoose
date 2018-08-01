@@ -1,0 +1,29 @@
+{
+  "name": "newblog-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/looneywebdev/newblog-mongoose.git"
+  },
+  "author": "hlooney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/looneywebdev/newblog-mongoose/issues"
+  },
+  "homepage": "https://github.com/looneywebdev/newblog-mongoose#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.6",
+    "morgan": "^1.9.0"
+  }
+}
