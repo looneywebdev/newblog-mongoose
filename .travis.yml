@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- 8.11.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: JgGoL8Br6drnoF+CmnUYxWA7MR5IRMID0RE7SMPJsSm+5BKPA10cglRMdMbfG1JbmKB5+f7uG8OxTs/mAVBO1cXWoGTmCZXqOj9zFPHvxM23v3PIg6HNEGa+HM0iuL/0pHVYmJ74SpY4AHeT+KCWEV9/KPjZfxTHPeA5fFCAKqqtTqcVjWrmvxcHNPp8D1DsXow1sbV/48Mj2F+fwZBykgxREkZjLkvPcWseA9pGE8XiOYP5tI73m9eotKgb+yCE6GT5KiUUuSOqll7PEImuYY8RP+/HPLs51TfOo8H0xikG+mmLq7xNfRC4r2RlQzf23z5WdmOulcbYhzx2mitqsa3OyDThdd0ui1ZiLvKtxhlHE5SoNQvwCqZ0nAU4qktrEBrD8gQjff3j7u6p6yOh6nReFOdSDLMyGR8mYVmjM4VlqMC4Y/eU6jYCxu5zTGygRLaJslukNMFsihtsLLPPDHMA0jNsUpOvWw0o89z3NoesqiNqbEsh80jcyVSZHSDcDqD9e9/nF7k60LQCA1IiFkPsxWBn04jNPdbhG53U6ceDtzuE9T/w+uZksHghL7yLqrH/LKbKLMXcbwBw9ngedALpnZ4wH+jnQvNWWPxuqpdSyXSC8FAi/KSg+duF2Rbwxlma5hsGENID1qh5crcYUOIFe9T4A/pirMMGePEzr5c=
+  app: afternoon-retreat-18149
+  on:
+    repo: looneywebdev/newblog-mongoose
+  cron:
+    - branch: features-test
+       interval: monthly
+       options: always run
